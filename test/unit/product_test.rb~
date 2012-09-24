@@ -53,7 +53,7 @@ class ProductTest < ActiveSupport::TestCase
   end
   
   test "el nombre del producto deria de ser unico" do
-    product = Product.new(  :denominacion => products(:ruby).denominacion,
+    product = Product.new(  :denominacion => products(:ruby).title,
                             :descaripcion => "most exciting dynamic language out there",
                             :precio => 49.50,
                             :imagen_url => ruby.png)

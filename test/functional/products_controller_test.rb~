@@ -4,9 +4,9 @@ class ProductsControllerTest < ActionController::TestCase
   setup do
     @product = products(:one)
     @update = {
-      :denominacion => 'celular',
-      :descaripcion => 'equipo movile',
-      :imagen_url => 'cs.jpg',
+      :denominacion => 'celular'
+      :descaripcion => 'equipo movile'
+      :imagen_url => 'cs.jpg'
       :precio => 20.78
     }
   end

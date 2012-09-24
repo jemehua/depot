@@ -13,7 +13,7 @@ two:
   precio: 9.99
   
 
-ruby22:
+ruby:
   denominacion: Programming Ruby 1.9
   descaripcion: Ruby is the fastest growing and most exciting dynamic language out there. If you need to get working programs delivered fast, you should add Ruby to your toolbox.
   precio: 49.50
