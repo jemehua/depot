@@ -1,0 +1,2 @@
+module AlmacenHelper
+end

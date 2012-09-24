@@ -1,16 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Depot</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
+  <title>Aplicacione integrales tienda en linea de libros</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-
-<%= yield %>
-
+<!-- START_HIGHLIGHT -->
+<body class='<%= controller.controller_name %>'>
+<!-- END_HIGHLIGHT -->
+  <div id="banner">
+    <%= image_tag("logo.png")%>
+    <%=@page_title || "aplicacione integrales"%>
+  </div>
+  
+  <div class="columns">
+    <div id="side">
+      <ul>
+        <li><a href="http://www...">Inicio</a></li>
+        <li><a href="http://www.../faq">preguntas</a></li>
+        <li><a href="http://www.../news">nuevos</a></li>
+        <li><a href="http://www.../contact">contacto</a></li>
+      </ul>
+    </div>
+    
+    <div id="main">
+      <%= yield %>
+    </div>
+  </div>
+</head>
 </body>
 </html>
-
 

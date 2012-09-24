@@ -1,0 +1,18 @@
+<% if notice %>
+<p id="notice"><%= notice %></p>
+<% end %>
+
+<h1>Catalo de libros</h1>
+
+<% @products.each do |product| %>
+  <div class="entry">
+    <%= image_tag(product.imagen_url) %>
+    <h3><%= product.denominacion %></h3>
+    <p><%= sanitize(product.descaripcion) %></p>
+    <div class="price_line">
+<!-- START:currency -->
+      <span class="price"><%= number_to_currency(product.precio) %></span>
+<!-- END:currency -->
+    </div>
+  </div>
+<% end %>
